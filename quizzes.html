@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes</title>
+    <link rel="icon" href="images/logo.png"/>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>KBA</span>.dev</a>
+        <ul class="navlist">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="quizzes.html" class="active">Quizzes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </header>
+
+      <section class="skills" id="skills">
+        <div class="main-text">
+          <h2 style="font-size: 4rem;"><span>Quizzes</span></h2>
+        </div>
+        <div class="skills-content">
+          <div class="box">
+            <div class="s-icons">
+              <i class='bx bxs-file' ></i>
+            </div>
+            <h3>Pre-Test 1</h3>
+            <img src="quizzes/PreTest1.png" alt="pretest1">
+            <p>
+              Explore advanced principles of Human-Computer Interaction, focusing on user experience and system design.
+            </p>
+          </div>
+          <div class="box">
+            <div class="s-icons">
+              <i class='bx bxs-file' ></i>
+            </div>
+            <h3>Pre-Test 2</h3>
+            <img src="quizzes/PreTest2.png" alt="pretest2">
+            <p>
+              Understand the fundamentals of designing with the user in mind and learn key research strategies.
+            </p>
+          </div>
+          <div class="box">
+            <div class="s-icons">
+              <i class='bx bxs-file' ></i>
+            </div>
+            <h3>Pre-Test 3</h3>
+            <img src="quizzes/PreTest3.png" alt="pretest3">
+            <p>
+              Dive into usability heuristics and evaluation methods to enhance user interface design.
+            </p>
+          </div>
+          <div class="box">
+            <div class="s-icons">
+              <i class='bx bxs-file' ></i>
+            </div>
+            <h3>Pre-Test 4</h3>
+            <img src="quizzes/PreTest4.png" alt="pretest4">
+            <p>
+              Learn how to create interactive systems and develop effective prototypes for user testing.
+            </p>
+          </div>
+          <div class="box">
+            <div class="s-icons">
+              <i class='bx bxs-file' ></i>
+            </div>
+            <h3>Pre-Test 5</h3>
+            <img src="quizzes/PreTest5.png" alt="pretest5">
+            <p>
+              Gain foundational insights into organizing, structuring, and labeling content effectively for seamless navigation and user experience.
+            </p>
+          </div>
+          <div class="box">
+            <div class="s-icons">
+              <i class='bx bx-food-menu' ></i>
+            </div>
+            <h3>Post-Test 1</h3>
+            <img src="quizzes/PostTest1.jpg" alt="posttest1">
+          </div>
+          <div class="box">
+            <div class="s-icons">
+              <i class='bx bx-food-menu' ></i>
+            </div>
+            <h3>Post-Test 2</h3>
+            <img src="quizzes/PostTest2.jpg" alt="posttest2">
+          </div>
+          <div class="box">
+            <div class="s-icons">
+              <i class='bx bx-food-menu' ></i>
+            </div>
+            <h3>Post-Test 3</h3>
+            <img src="quizzes/PostTest3.jpg" alt="posttest3">
+          </div>
+          <div class="box">
+            <div class="s-icons">
+              <i class='bx bx-food-menu' ></i>
+            </div>
+            <h3>Long Quiz</h3>
+            <img src="quizzes/LongQuiz.jpg" alt="longquiz">
+          </div>
+          <div class="box">
+            <div class="s-icons">
+              <i class='bx bx-food-menu' ></i>
+            </div>
+            <h3>Laboratory Activity (by partner)</h3>
+            <img src="quizzes/LabAct.jpg" alt="labact">
+          </div>
+          <div class="box">
+            <div class="s-icons">
+              <i class='bx bx-food-menu' ></i>
+            </div>
+            <h3>MidTerm Examination</h3>
+            <img src="quizzes/MidTermExam.jpg" alt="midtermexam">
+          </div>
+        </div>
+      </section>
+      <script type="text/javascript" src="vanilla-tilt.js"></script>
+      <script>
+        const images = document.querySelectorAll('.box img');
+      
+        images.forEach(img => {
+          img.addEventListener('click', () => {
+            const isZoomed = img.classList.contains('zoomed');
+            document.body.classList.toggle('no-scroll', !isZoomed);
+            img.classList.toggle('zoomed');
+          });
+        });
+      </script>
+</body>
+</html>

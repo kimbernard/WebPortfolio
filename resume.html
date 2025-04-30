@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="icon" href="images/logo.png"/>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>KBA</span>.dev</a>
+        <ul class="navlist">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="quizzes.html">Quizzes</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </header>
+      
+      <section class="skills" id="skills">
+        <div class="top">
+          <a href="about.html"><i class="bx bxs-chevron-left" style="color:black"></i></a>
+        </div>
+        <div class="main-text">
+          <h2 style="font-size: 50px;">My <span>Resume</span></h2> <br>
+        </div>
+        <div class="skills-content">
+          <div class="box">
+            <div class="resume-columns">
+              <!-- LEFT COLUMN -->
+              <div class="left-column">
+                <h3>Kim Bernard D. Antonio</h3>
+                <p>
+                  📍 Philippines | 📧 itskbb2804@gmail.com | 📱 +63 9957951147 <br>
+                  💻 Aspiring Web Developer | IT Student | Tech Enthusiast
+                </p>
+      
+                <h3 style="color: white;">Technical Skills</h3>
+                <p>
+                  ● HTML, CSS, JavaScript (learning) <br>
+                  ● Visual Studio Code <br>
+                  ● Canva, Figma (UI/UX basics) <br>
+                  ● Web structure, responsiveness <br>
+                  ● Windows terminal (basic)
+                </p>
+      
+                <h3 style="color: white;">Soft Skills</h3>
+                <p>
+                  ● Detail-Oriented <br>
+                  ● Fast Learner <br>
+                  ● Team Player <br>
+                  ● Adaptable <br>
+                  ● Critical Thinker <br>
+                  ● Strong Communication
+                </p>
+      
+                <h3 style="color: white;">Certifications</h3>
+                <img id="certImage" src="about/certificate.png" alt="Certificate" width="60%" style="cursor: pointer;"> 
+                  <img class="modal-content" id="modalImg">
+                <h3 style="color: white;">Personal Traits</h3>
+                <p>
+                  ● Persistent and goal-driven <br>
+                  ● Faith-driven mindset <br>
+                  ● Curious about how things work <br>
+                  ● Loves minimalist, aesthetic design
+                </p>
+              </div>
+      
+              <!-- RIGHT COLUMN -->
+              <div class="right-column">
+                <h3 style="color: white;">Objective</h3>
+                <p>
+                  Motivated and dedicated BSIT student with a passion for web technologies and design. 
+                  Seeking opportunities to apply and enhance my skills in real-world development environments. 
+                  Eager to contribute to innovative projects and continue learning in the ever-evolving tech industry.
+                </p>
+      
+                <h3 style="color: white;">Education</h3>
+                <h1>Bachelor of Science in Information Technology</h1>
+                <p>2024-2025 <br>
+                  Cavite State University - Silang Campus (3rd year)</p>
+      
+                <h1>Senior High Graduate (STEM)</h1>
+                <p>2020-2021 <br>
+                  Lumil Integrated National High School</p>
+      
+                <h1>Elementary Graduate</h1>
+                <p>2014-2015 <br>
+                  Pag-Asa Central School</p>
+      
+                <h3 style="color: white;">Career Goal</h3>
+                <p>
+                  To become a professional web developer who crafts user-centered, functional, and visually appealing digital experiences for individuals and businesses.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          const certImg = document.getElementById("certImage");
+        
+          certImg.addEventListener("click", () => {
+            certImg.classList.toggle("zoomed");
+          });
+        
+          // Optional: close zoom if clicked anywhere else
+          document.addEventListener("click", (e) => {
+            if (e.target !== certImg && certImg.classList.contains("zoomed")) {
+              certImg.classList.remove("zoomed");
+            }
+          });
+        </script>
+          <script type="text/javascript" src="vanilla-tilt.js"></script>
+</body>
+</html>
